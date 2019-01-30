@@ -15,6 +15,7 @@
 		19244F0721F8E4BF00E40466 /* CoolProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244F0621F8E4BF00E40466 /* CoolProTests.swift */; };
 		19244F1221F8E4BF00E40466 /* CoolProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244F1121F8E4BF00E40466 /* CoolProUITests.swift */; };
 		19244F2221F8EA3D00E40466 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244F2121F8EA3D00E40466 /* TabBarController.swift */; };
+		19D0E06422021B740064D34C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0E06322021B740064D34C /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		19244F1121F8E4BF00E40466 /* CoolProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolProUITests.swift; sourceTree = "<group>"; };
 		19244F1321F8E4BF00E40466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19244F2121F8EA3D00E40466 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		19D0E06322021B740064D34C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		19D0E068220229200064D34C /* AnimeList.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = AnimeList.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		19244EF021F8E4BF00E40466 /* CoolPro */ = {
 			isa = PBXGroup;
 			children = (
+				19D0E065220229070064D34C /* CSV */,
 				19244EF121F8E4BF00E40466 /* AppDelegate.swift */,
 				19244EF321F8E4BF00E40466 /* ViewController.swift */,
 				19244EF521F8E4BF00E40466 /* Main.storyboard */,
@@ -106,6 +110,7 @@
 				19244EFA21F8E4BF00E40466 /* LaunchScreen.storyboard */,
 				19244EFD21F8E4BF00E40466 /* Info.plist */,
 				19244F2121F8EA3D00E40466 /* TabBarController.swift */,
+				19D0E06322021B740064D34C /* Pokemon.swift */,
 			);
 			path = CoolPro;
 			sourceTree = "<group>";
@@ -126,6 +131,14 @@
 				19244F1321F8E4BF00E40466 /* Info.plist */,
 			);
 			path = CoolProUITests;
+			sourceTree = "<group>";
+		};
+		19D0E065220229070064D34C /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				19D0E068220229200064D34C /* AnimeList.csv */,
+			);
+			path = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19244F2221F8EA3D00E40466 /* TabBarController.swift in Sources */,
+				19D0E06422021B740064D34C /* Pokemon.swift in Sources */,
 				19244EF421F8E4BF00E40466 /* ViewController.swift in Sources */,
 				19244EF221F8E4BF00E40466 /* AppDelegate.swift in Sources */,
 			);
