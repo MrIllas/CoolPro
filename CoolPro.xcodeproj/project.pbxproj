@@ -15,7 +15,12 @@
 		19244F0721F8E4BF00E40466 /* CoolProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244F0621F8E4BF00E40466 /* CoolProTests.swift */; };
 		19244F1221F8E4BF00E40466 /* CoolProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244F1121F8E4BF00E40466 /* CoolProUITests.swift */; };
 		19244F2221F8EA3D00E40466 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244F2121F8EA3D00E40466 /* TabBarController.swift */; };
-		19D0E06422021B740064D34C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0E06322021B740064D34C /* Pokemon.swift */; };
+		E12A0677220DFE3200CE67C2 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A0676220DFE3200CE67C2 /* Tools.swift */; };
+		E12A067F220E417600CE67C2 /* pokedex.csv in Resources */ = {isa = PBXBuildFile; fileRef = E12A067E220E417600CE67C2 /* pokedex.csv */; };
+		E12A0681220E41DE00CE67C2 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A0680220E41DE00CE67C2 /* Pokemon.swift */; };
+		E1961EB122170629005A964C /* PokemonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1961EB022170629005A964C /* PokemonTableView.swift */; };
+		E1BAD836220B67E3003E998D /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAD835220B67E3003E998D /* CSV.swift */; };
+		E1CA5CEF220E546A00908576 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CA5CEE220E546A00908576 /* PokemonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +55,12 @@
 		19244F1121F8E4BF00E40466 /* CoolProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolProUITests.swift; sourceTree = "<group>"; };
 		19244F1321F8E4BF00E40466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19244F2121F8EA3D00E40466 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		19D0E06322021B740064D34C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
-		19D0E068220229200064D34C /* AnimeList.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = AnimeList.csv; sourceTree = "<group>"; };
+		E12A0676220DFE3200CE67C2 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		E12A067E220E417600CE67C2 /* pokedex.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pokedex.csv; path = ../../../../../Downloads/pokedex.csv; sourceTree = "<group>"; };
+		E12A0680220E41DE00CE67C2 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		E1961EB022170629005A964C /* PokemonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableView.swift; sourceTree = "<group>"; };
+		E1BAD835220B67E3003E998D /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		E1CA5CEE220E546A00908576 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +119,9 @@
 				19244EFA21F8E4BF00E40466 /* LaunchScreen.storyboard */,
 				19244EFD21F8E4BF00E40466 /* Info.plist */,
 				19244F2121F8EA3D00E40466 /* TabBarController.swift */,
-				19D0E06322021B740064D34C /* Pokemon.swift */,
+				E12A0680220E41DE00CE67C2 /* Pokemon.swift */,
+				E1CA5CEE220E546A00908576 /* PokemonTableViewCell.swift */,
+				E1961EB022170629005A964C /* PokemonTableView.swift */,
 			);
 			path = CoolPro;
 			sourceTree = "<group>";
@@ -136,7 +147,9 @@
 		19D0E065220229070064D34C /* CSV */ = {
 			isa = PBXGroup;
 			children = (
-				19D0E068220229200064D34C /* AnimeList.csv */,
+				E12A067E220E417600CE67C2 /* pokedex.csv */,
+				E1BAD835220B67E3003E998D /* CSV.swift */,
+				E12A0676220DFE3200CE67C2 /* Tools.swift */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -209,6 +222,7 @@
 				TargetAttributes = {
 					19244EED21F8E4BF00E40466 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					19244F0121F8E4BF00E40466 = {
 						CreatedOnToolsVersion = 10.1;
@@ -246,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19244EFC21F8E4BF00E40466 /* LaunchScreen.storyboard in Resources */,
+				E12A067F220E417600CE67C2 /* pokedex.csv in Resources */,
 				19244EF921F8E4BF00E40466 /* Assets.xcassets in Resources */,
 				19244EF721F8E4BF00E40466 /* Main.storyboard in Resources */,
 			);
@@ -273,9 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19244F2221F8EA3D00E40466 /* TabBarController.swift in Sources */,
-				19D0E06422021B740064D34C /* Pokemon.swift in Sources */,
+				E1CA5CEF220E546A00908576 /* PokemonTableViewCell.swift in Sources */,
+				E1BAD836220B67E3003E998D /* CSV.swift in Sources */,
+				E12A0677220DFE3200CE67C2 /* Tools.swift in Sources */,
 				19244EF421F8E4BF00E40466 /* ViewController.swift in Sources */,
+				E1961EB122170629005A964C /* PokemonTableView.swift in Sources */,
 				19244EF221F8E4BF00E40466 /* AppDelegate.swift in Sources */,
+				E12A0681220E41DE00CE67C2 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoolPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ROBERT.CoolPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoolPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

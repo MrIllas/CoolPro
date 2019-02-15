@@ -10,9 +10,19 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //LOAD
+        
+        iniTabBar()
+        
+        
+    }
+    
+    func iniTabBar(){
         //Common settings set up
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.lightGray], for: .selected)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black], for: .normal)
@@ -28,4 +38,6 @@ class TabBarController: UITabBarController {
         tabBarItem.selectedImage = UIImage(named: "search_grey")?.withRenderingMode(.alwaysOriginal)
         
     }
+    
+    
 }
