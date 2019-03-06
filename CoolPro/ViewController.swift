@@ -42,12 +42,22 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         myCell.idPokemon.text = pokemon[indexPath.row].getEditedId
         myCell.imgType1.image = pokemon[indexPath.row].getTypeImg(type: 1)
         myCell.imgType2.image = pokemon[indexPath.row].getTypeImg(type: 2)
-        /*let url = URL(string: article.imageURL)!
-        cell.imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder.png"))
-        */
-        //let url = URL(string: pokemon[indexPath.row].url_image)!
-        //let imageData = try! Data(contentsOf: url)
-        //myCell.imgPokemon.image = UIImage(data: imageData)
+        
+        do{
+            let url = URL(string: pokemon[indexPath.row].url_image)!
+            let imageData = try? Data(contentsOf: url)
+            if imageData != nil{
+                print("No es nil")
+                myCell.imgPokemon.image = UIImage(data: imageData!)
+            }else{
+                print("Es nil")
+            }
+        }catch {
+            
+        }
+        
+        
+        
         /*myCell.imgPokemon.imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "pk_Bulbasaur.png"))*/
         
         
